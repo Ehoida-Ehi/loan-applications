@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Loan Application</title>
+</head>
+<body>
+        <div class="card" >
+          <div class="container" >  
+              <h1>Credit Worthiness of Client</h1>
+              <img style="width: 50px;" src="./images/man.png" >
+              <img style="width: 50px;" src="./images/woman.png" >
+          </div>   
+           <form id="RegisterForm">
+             <label for="income">Annual Income:</label> 
+             <input id="income" name="Enter Annual income here" type="number" required />
+             
+             <label for="currentAmount">Current Amount in Account:</label>
+             <input id="currentAmount" name="Enter Current Amount" type="number" required/>
+
+             <label for="loanAmount">Requested loan Amount:</label>
+             <input id="loanAmount" name="Enter loan Amount" type="number" required />
+
+             <label for="creditHistory">6 Months Credit History:</label>
+             <select id="creditHistory" name="creditHistory" required >
+                 <!-- <option value="">6 Months Credict History:</option> -->
+                 <option value="yes">Yes</option>
+                 <option value="no">No</option>
+             </select>
+
+             <label for="lastDepositDate">Last Deposit Date:</label>
+             <input id="lastDepositDate" name="Enter lastDepositDate" type="date" required />
+
+             <label for="lastLoanDate">Last Loan Date</label>
+             <input id="lastLoanDate" name="Enter lastLoanDate" type="date" required />
+
+             <label for="loanRepaymentPeriod">Loan Repayment Period(Months)</label>
+             <input id="loanRepaymentPeriod" name="Enter loanRepaymentPeriod" type="number" required />
+
+             <label for="accountType">Account Operated Type:</label>
+             <select id="accountType" name="accountType" required>
+                 <option value="current">Current</option>
+                 <option value="savings">Savings</option>
+             </select>
+ 
+             <button type="submit">Check Worthiness</button>
+           </form> 
+
+           <div id="result"></div>
+       </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

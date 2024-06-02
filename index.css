@@ -1,0 +1,87 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-image: url(./images/ipad_for_work.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.4);
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    border: .5 solid grey;
+}
+
+.card h1{
+    font-weight: 600;
+    color: red;
+}
+
+label{
+    margin: 0;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.card input{
+    height: 20px;
+    width: 500px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    padding: 10px 10px;
+    background-color: #ddd;
+    
+}
+
+select{
+    padding: 10px 10px;
+    background-color: #ddd;
+}
+
+.card button{
+    margin-top: 5px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: red;
+    font-weight: 700;
+}
+
+#RegisterForm{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#result{
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    height: 20px;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
